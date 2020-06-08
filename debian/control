@@ -1,0 +1,26 @@
+Source: debootstrap
+Section: admin
+Priority: optional
+Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
+Uploaders: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
+Build-Depends: debhelper-compat (= 12)
+Standards-Version: 4.5.0
+
+Package: debootstrap
+Architecture: all
+Depends: ${misc:Depends}, wget
+Recommends: gnupg, ${keyring}, arch-test (>= 0.11~),
+Suggests: ubuntu-archive-keyring,
+          squid-deb-proxy-client,
+Description: Bootstrap a basic Kaisen system
+ debootstrap is used to create a Debian base system from scratch,
+ without requiring the availability of dpkg or apt. It does this by
+ downloading .deb files from a mirror site, and carefully unpacking them
+ into a directory which can eventually be chrooted into.
+
+Package: debootstrap-udeb
+Section: debian-installer
+Package-Type: udeb
+Architecture: all
+Depends: ${misc:Depends}, mounted-partitions
+Description: Bootstrap the Debian system
