@@ -47,8 +47,8 @@ CHECKCERTIF=""
 PRIVATEKEY=""
 CACHE_DIR=""
 
-DEF_MIRROR="https://kaisendeb.lf.je/"
-DEF_HTTPS_MIRROR="https://kaisendeb.lf.je/"
+DEF_MIRROR="https://deb.kaisenlinux.org"
+DEF_HTTPS_MIRROR="https://deb.kaisenlinux.org"
 
 # set $CONTAINER
 detect_container

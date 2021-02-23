@@ -1,10 +1,11 @@
 Source: debootstrap
 Section: admin
 Priority: optional
-Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
-Uploaders: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
+Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
+Vcs-Git: https://gitlab.com/kaisenlinux/packages/debootstrap.git
+Vcs-Brwoser: https://gitlab.com/kaisenlinux/packages/debootstrap
 Build-Depends: debhelper-compat (= 12)
-Standards-Version: 4.5.0
+Standards-Version: 4.5.1
 
 Package: debootstrap
 Architecture: all

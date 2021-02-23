@@ -1,3 +1,10 @@
+debootstrap (1.0.123+kaisen2) kaisen-devel; urgency=medium
+
+  * Update repositories on bootstrap
+  * Update mail address in control file
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 23 Feb 2020 00:54:04 +0200
+
 debootstrap (1.0.123+kaisen1) kaisen-devel; urgency=medium
 
   * Adapting base system for Kaisen Linux
