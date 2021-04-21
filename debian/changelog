@@ -1,3 +1,12 @@
+debootstrap (1:1.0.123-1kaisen1) kaisen-packages; urgency=medium
+
+  * Transform package to quilt
+  * Add patch to add default Kaisen Linux repository
+  * Fix typo for Vcs-Browser
+  * Update compat to 13
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 21 Apr 2021 04:41:45 +0200
+
 debootstrap (1.0.123+kaisen2) kaisen-devel; urgency=medium
 
   * Update repositories on bootstrap

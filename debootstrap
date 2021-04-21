@@ -47,8 +47,8 @@ CHECKCERTIF=""
 PRIVATEKEY=""
 CACHE_DIR=""
 
-DEF_MIRROR="https://deb.kaisenlinux.org"
-DEF_HTTPS_MIRROR="https://deb.kaisenlinux.org"
+DEF_MIRROR="http://deb.debian.org/debian"
+DEF_HTTPS_MIRROR="https://deb.debian.org/debian"
 
 # set $CONTAINER
 detect_container
@@ -85,7 +85,7 @@ usage_err()
 usage()
 {
 	echo "Usage: ${0##*/} [OPTION]... <suite> <target> [<mirror> [<script>]]"
-	echo "Bootstrap a Kaisen base system into a target directory."
+	echo "Bootstrap a Debian base system into a target directory."
 	echo
 	cat <<EOF
       --help                 display this help and exit

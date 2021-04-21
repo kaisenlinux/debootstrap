@@ -3,7 +3,7 @@ download_style apt
 finddebs_style from-indices
 variants - buildd fakechroot minbase
 keyring /usr/share/keyrings/kaisen-archive-keyring.gpg
-default_mirror https://kaisendeb.lf.je
+default_mirror https://deb.kaisenlinux.org
 
 # include common settings
 if [ -e "$DEBOOTSTRAP_DIR/scripts/debian-common" ]; then
