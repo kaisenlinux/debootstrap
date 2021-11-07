@@ -1,19 +1,19 @@
 Source: debootstrap
 Section: admin
 Priority: optional
+XSBC-Original-Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
 Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
-Vcs-Git: https://gitlab.com/kaisenlinux/packages/debootstrap.git
+Build-Depends: debhelper-compat (= 12)
+Standards-Version: 4.5.0
 Vcs-Browser: https://gitlab.com/kaisenlinux/packages/debootstrap
-Build-Depends: debhelper-compat (= 13)
-Standards-Version: 4.5.1
+Vcs-Git: https://gitlab.com/kaisenlinux/packages/debootstrap.git
 
 Package: debootstrap
 Architecture: all
 Depends: ${misc:Depends}, wget
-Recommends: gnupg, ${keyring}, arch-test (>= 0.11~),
-Suggests: ubuntu-archive-keyring,
-          squid-deb-proxy-client,
-Description: Bootstrap a basic Kaisen system
+Recommends: gnupg, ${debootstrap:Recommends}
+Suggests: squid-deb-proxy-client, ${debootstrap:Suggests}
+Description: Bootstrap a basic Debian system
  debootstrap is used to create a Debian base system from scratch,
  without requiring the availability of dpkg or apt. It does this by
  downloading .deb files from a mirror site, and carefully unpacking them
