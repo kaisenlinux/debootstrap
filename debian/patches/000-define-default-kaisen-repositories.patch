@@ -1,0 +1,15 @@
+Author: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
+
+--- debootstrap-1.0.125.orig/debootstrap
++++ debootstrap-1.0.125/debootstrap
+@@ -48,8 +48,8 @@ PRIVATEKEY=""
+ CACHE_DIR=""
+ INRELEASE_PATH=""
+ 
+-DEF_MIRROR="http://deb.debian.org/debian"
+-DEF_HTTPS_MIRROR="https://deb.debian.org/debian"
++DEF_MIRROR="https://deb.kaisenlinux.org"
++DEF_HTTPS_MIRROR="https://deb.kaisenlinux.org"
+ 
+ # set $CONTAINER
+ detect_container
