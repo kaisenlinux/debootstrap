@@ -1,3 +1,10 @@
+debootstrap (1:1.0.125-3kaisen) kaisen-packages; urgency=medium
+
+  * Update Kaisen files
+  * Update debootstrap patch
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 10 Nov 2021 22:39:22 +0200
+
 debootstrap (1:1.0.125-2kaisen) kaisen-packages; urgency=medium
 
   * Fix filenames of Kaisen repositories
