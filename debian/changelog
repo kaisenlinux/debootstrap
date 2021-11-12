@@ -1,3 +1,10 @@
+debootstrap (1:1.0.126-2kaisen) kaisen-packages; urgency=low
+
+  * Readd Kaisen dpkg-vendor
+  * Remove gzip compression
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 12 Nov 2021 23:55:29 +0200
+
 debootstrap (1:1.0.126-1kaisen) kaisen-packages; urgency=low
 
   * Import new upstream release
