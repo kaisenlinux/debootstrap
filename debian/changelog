@@ -1,3 +1,15 @@
+debootstrap (1:1.0.126-1kaisen) kaisen-packages; urgency=low
+
+  * Import new upstream release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 12 Nov 2021 20:44:46 +0200
+
+debootstrap (1.0.126) unstable; urgency=low
+
+  * Ensure bookworm+ suites are set up with merged-usr. (Closes: #978636)
+
+ -- Dimitri John Ledkov <dimitri.ledkov@canonical.com>  Mon, 08 Nov 2021 14:40:06 +0000
+
 debootstrap (1:1.0.125-3kaisen) kaisen-packages; urgency=medium
 
   * Update Kaisen files
