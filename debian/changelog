@@ -1,3 +1,100 @@
+debootstrap (1:1.0.132-1kaisen) kaisen-packages; urgency=medium
+
+  * Import the 1.0.132 version
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sat, 07 Oct 2023 20:07:58 +0100
+
+debootstrap (1.0.132) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Johannes Schauer Marin Rodrigues ]
+  * debian/tests/control: run debootstrap with unshared namespaces
+
+  [ Simon McVittie ]
+  * d/tests/debian-testing:
+    - More accurately emulate the behaviour of pbuilder 0.231
+    - Revert fake/schroot-1.6.10-3 to an accurate emulation of the
+      behaviour of schroot 1.6.10-3 (Closes: #983311)
+    - Document schroot 1.6.10-3 with the default profile as expected to
+      fail to use /dev/pts in a lxc >= 3 or Docker container; this is a
+      schroot bug (#983423) and not a debootstrap bug
+    - Resync fake/schroot-proposed with the patch proposed on #983423
+    - Improve debug logging
+    - Expand doc-comments
+    - With these changes, the autopkgtest is confirmed to pass in
+      autopkgtest-virt-qemu (Closes: #983197)
+    - Skip systemd-nspawn phase when $container is set
+
+ -- Luca Boccassi <bluca@debian.org>  Mon, 28 Aug 2023 14:16:37 +0100
+
+debootstrap (1.0.131) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Simon McVittie ]
+  * functions: Reinstate setup_merged_usr() as it existed prior to !96
+
+ -- Helmut Grohne <helmut@subdivi.de>  Sun, 20 Aug 2023 14:11:43 +0200
+
+debootstrap (1.0.130) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Fatih Altun ]
+  * Add Pardus support
+
+  [ Denis 'GNUtoo' Carikli ]
+  * Add Trisquel to scripts dir
+
+  [ Helmut Grohne ]
+  * implement merged-/usr by post-merging. Closes: #1049898
+
+  [ Luca Boccassi ]
+  * Add myself to Uploaders
+
+  [ Michael Chen ]
+  * README: add --preserve-env option to sudo command
+
+ -- Luca Boccassi <bluca@debian.org>  Fri, 18 Aug 2023 16:02:59 +0100
+
+debootstrap (1.0.129) UNRELEASED; urgency=medium
+
+  * hurd: Fix debootstrap --second-stage on native runs.
+
+ -- Samuel Thibault <sthibault@debian.org>  Sat, 20 May 2023 22:56:36 +0200
+
+debootstrap (1.0.128+nmu5) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Undo hostile unwarranted change.
+
+ -- Luca Boccassi <bluca@debian.org>  Sun, 16 Jul 2023 12:42:47 +0100
+
+debootstrap (1.0.128+nmu3) unstable; urgency=medium
+
+  * Non-maintainer upload.
+
+  [ Akbarkhon Variskhanov ]
+  * functions: Quote $USE_COMPONENTS. Thanks to Robert de Bath for
+    reporting the bug and providing the fix (Closes: #963804)
+
+  [ Johannes Schauer Marin Rodrigues ]
+  * functions: improve misleading error message when tar fails
+  * check if http_proxy is unset instead of checking if it's empty
+    (Closes: #1031105)
+  * If mount -t proc proc /proc failed, fall back to bind-mounting /proc
+
+  [ Simon McVittie ]
+  * Mention --merged-usr in --help output (Closes: #1031828)
+  * functions: Default to merged-/usr, even for newer suites' buildds
+  * d/source/lintian-overrides: Update overrides syntax
+
+  [ Luca Boccassi ]
+  * Bump Standards-Version to 4.6.2, no changes
+
+ -- Luca Boccassi <bluca@debian.org>  Sat, 15 Jul 2023 12:56:11 +0100
+
 debootstrap (1:1.0.128-1kaisen) kaisen-packages; urgency=medium
 
   * Import the 1.0.128 version

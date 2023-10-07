@@ -4,7 +4,7 @@ Priority: optional
 XSBC-Original-Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
 Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
 Build-Depends: debhelper-compat (= 13)
-Standards-Version: 4.6.0.1
+Standards-Version: 4.6.2
 Vcs-Browser: https://gitlab.com/kaisenlinux/packages/debootstrap
 Vcs-Git: https://gitlab.com/kaisenlinux/packages/debootstrap.git
 
@@ -13,8 +13,8 @@ Architecture: all
 Depends: ${misc:Depends}, wget
 Recommends: gnupg, ${debootstrap:Recommends}
 Suggests: squid-deb-proxy-client, ${debootstrap:Suggests}
-Description: Bootstrap a basic Debian system
- debootstrap is used to create a Debian base system from scratch,
+Description: Bootstrap a basic Kaisen system
+ debootstrap is used to create a Kaisen base system from scratch,
  without requiring the availability of dpkg or apt. It does this by
  downloading .deb files from a mirror site, and carefully unpacking them
  into a directory which can eventually be chrooted into.
@@ -24,4 +24,4 @@ Section: debian-installer
 Package-Type: udeb
 Architecture: all
 Depends: ${misc:Depends}, mounted-partitions
-Description: Bootstrap the Debian system
+Description: Bootstrap the Kaisen system
