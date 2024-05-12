@@ -49,8 +49,8 @@ PRIVATEKEY=""
 CACHE_DIR=""
 INRELEASE_PATH=""
 
-DEF_MIRROR="http://deb.kaisenlinux.org"
-DEF_HTTPS_MIRROR="https://deb.kaisenlinux.org"
+DEF_MIRROR="http://deb.debian.org/debian"
+DEF_HTTPS_MIRROR="https://deb.debian.org/debian"
 
 # set $CONTAINER
 detect_container
@@ -87,7 +87,7 @@ usage_err()
 usage()
 {
 	echo "Usage: ${0##*/} [OPTION]... <suite> <target> [<mirror> [<script>]]"
-	echo "Bootstrap a Kaisen base system into a target directory."
+	echo "Bootstrap a Debian base system into a target directory."
 	echo
 	cat <<EOF
       --help                 display this help and exit
@@ -607,6 +607,9 @@ export ARCH SUITE EXTRA_SUITES TARGET CHROOT_CMD SHA_SIZE DEBOOTSTRAP_CHECKSUM_F
 if am_doing_phase first_stage second_stage; then
 	if in_path id && [ "$(id -u)" -ne 0 ]; then
 		error 1 NEEDROOT "debootstrap can only run as root"
+	fi
+	if ! in_path chroot; then
+		error 1 NEEDCHROOT "Cannot find chroot executable in \$PATH"
 	fi
 	# Ensure that we can create working devices and executables on the target.
 	if ! check_sane_mount "$TARGET"; then
