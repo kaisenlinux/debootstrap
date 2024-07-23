@@ -12,7 +12,7 @@ Vcs-Git: https://gitlab.com/kaisenlinux/packages/debootstrap.git
 Package: debootstrap
 Architecture: all
 Multi-Arch: foreign
-Depends: ${misc:Depends}, wget
+Depends: ${misc:Depends}, wget, distro-info
 Recommends: gnupg, mount, ${debootstrap:Recommends}
 Suggests: squid-deb-proxy-client, ${debootstrap:Suggests}
 Description: Bootstrap a basic Kaisen system

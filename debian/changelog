@@ -1,3 +1,41 @@
+debootstrap (1:1.0.136-1kaisen) kaisen-packages; urgency=medium
+
+  * Import the 1.0.136 release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 23 Jul 2024 12:11:28 +0200
+
+debootstrap (1.0.136) unstable; urgency=medium
+
+  [ Philip Hands ]
+  * reinstate Debian codename symlinks (closes: #1073785)
+  * drop unneeded addition of "test extras"
+  * switch to using branch2repo for salsa-ci
+  * avoid setting DEF_MIRROR to https://https://...
+
+ -- Luca Boccassi <bluca@debian.org>  Tue, 18 Jun 2024 21:36:25 +0100
+
+debootstrap (1.0.135) unstable; urgency=medium
+
+  [ Ken Sharp ]
+  * fix quoting to allow spaces in target directory (Closes: #1061820)
+  * Use distro-info where possible
+  * Remove superfluous symlinks
+  * Use correct keyring and mirror for Ubuntu
+  * Ubuntu: test for dpkg zstd support for Hirsute+
+  * Update dependencies
+  * Remove hardcoded HTTPS mirror and use inline substitution
+
+  [ Adrien Robert ]
+  * fix: handling of DIRECT returned by Acquire::http:Proxy-Auto-Detect
+
+  [ Johannes Schauer Marin Rodrigues ]
+  * debian/tests/debian-testing: test minbase, default and buildd variants
+
+  [ Helmut Grohne ]
+  * make debootstrap work on filesystems mounted nodev (Closes: #1073169)
+
+ -- Luca Boccassi <bluca@debian.org>  Sat, 15 Jun 2024 11:13:44 +0100
+
 debootstrap (1:1.0.134-1kaisen) kaisen-packages; urgency=medium
 
   * Import the 1.0.134 release

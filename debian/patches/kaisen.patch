@@ -1,19 +1,18 @@
 Author: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
 
---- debootstrap-1.0.125.orig/debootstrap
-+++ debootstrap-1.0.125/debootstrap
-@@ -48,8 +48,8 @@ PRIVATEKEY=""
+--- debootstrap-1.0.136.orig/debootstrap
++++ debootstrap-1.0.136/debootstrap
+@@ -49,7 +49,8 @@ PRIVATEKEY=""
  CACHE_DIR=""
  INRELEASE_PATH=""
  
 -DEF_MIRROR="http://deb.debian.org/debian"
--DEF_HTTPS_MIRROR="https://deb.debian.org/debian"
-+DEF_MIRROR="http://deb.kaisenlinux.org"
++DEF_MIRROR="https://deb.kaisenlinux.org"
 +DEF_HTTPS_MIRROR="https://deb.kaisenlinux.org"
  
  # set $CONTAINER
  detect_container
-@@ -86,7 +86,7 @@ usage_err()
+@@ -86,7 +87,7 @@ usage_err()
  usage()
  {
  	echo "Usage: ${0##*/} [OPTION]... <suite> <target> [<mirror> [<script>]]"
