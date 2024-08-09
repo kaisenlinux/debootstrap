@@ -1,3 +1,21 @@
+debootstrap (1:1.0.137-1kaisen) kaisen-packages; urgency=medium
+
+  * Import the 1.0.137 release
+  * Add a patch to fix no /lib64 symlink may be break the bootstraping
+  * Improve default Kaisen scripts
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 09 Aug 2024 07:47:47 +0200
+
+debootstrap (1.0.137) unstable; urgency=medium
+
+  [ kasperk81 ]
+  * reinstate Ubuntu codename symlinks
+
+  [ Luca Boccassi ]
+  * Ubuntu: add symlink for oracular
+
+ -- Luca Boccassi <bluca@debian.org>  Thu, 25 Jul 2024 23:15:47 +0100
+
 debootstrap (1:1.0.136-1kaisen) kaisen-packages; urgency=medium
 
   * Import the 1.0.136 release
