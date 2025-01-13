@@ -25,7 +25,7 @@ sleep 2
 
 tempdir=$(mktemp -d)
 # Run debootstrap against our MitM "mirror", ignoring the inevitable GPG errors
-debootstrap --download-only --variant minbase --no-check-gpg ${FLASK_DIST} $tempdir http://127.0.0.1:5000/${FLASK_DISTRO}/
+debootstrap --download-only --variant minbase --no-check-sig ${FLASK_DIST} $tempdir http://127.0.0.1:5000/${FLASK_DISTRO}/
 rc=$?
 
 rm -rf $tempdir

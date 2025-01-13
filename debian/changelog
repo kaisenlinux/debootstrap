@@ -1,3 +1,79 @@
+debootstrap (1:1.0.140-1kaisen) kaisen-packages; urgency=medium
+
+  * Import the new upstream release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 13 Jan 2025 22:51:22 +0200
+
+debootstrap (1.0.140) unstable; urgency=medium
+
+  [ Dominique Martinet ]
+  * ubuntu: fix scripts/gutsy syntax error
+
+  [ Helmut Grohne ]
+  * move Debian-specific /usr-merge checks from functions to
+    scripts/debian-common
+  * scripts/debian-common: fold multiple paths setting MERGED_USR
+
+  [ Luca Boccassi ]
+  * Bump Standards-Version to 4.7.0, no changes
+
+ -- Luca Boccassi <bluca@debian.org>  Wed, 01 Jan 2025 17:57:08 +0000
+
+debootstrap (1.0.139) unstable; urgency=high
+
+  [ Dan Bungert ]
+  * Ubuntu: fix intended reference to SUITE
+
+  [ Kasper Kantz ]
+  * Make distro-info script portable
+
+  [ keve-guest ]
+  * Add support for running on MacOS
+
+  [ Guillem Jover ]
+  * Add debian/debhelper-build-stamp to debian/.gitignore
+  * Add new --no-check-sig and --force-check-sig
+  * Recommend gpgv instead of gnupg
+  * Use «in_path» instead of executing «gpgv --version»
+  * Add sopv support
+  * Add sqv support (Closes: #1091588)
+
+  [ Luca Boccassi ]
+  * Prefer gpgv if all signature verification tools are installed
+  * Do not pull in usr-is-merged in trixie/sid (Closes: #1091649)
+
+ -- Luca Boccassi <bluca@debian.org>  Sun, 29 Dec 2024 12:24:52 +0000
+
+debootstrap (1.0.138) unstable; urgency=medium
+
+  [ Benjamin Drung ]
+  * Fix EXTRACTOR_OVERRIDE: parameter not set (LP: #1971951)
+  * Fix several shellcheck complaints
+
+  [ Samuel Thibault ]
+  * work_out_debs: On hurd-any, when cron gets installed, add opensysusers to
+    fulfill's cron-daemon-common dependency on systemd-opensysusers
+    (Closes: Bug#1079374)
+
+  [ Miao Wang ]
+  * Self-identify the name and the version in the User-Agent header sent out
+    by wget.
+
+  [ Charles Short ]
+  * Add support for eLxr.
+
+  [ Denis 'GNUtoo' Carikli ]
+  * scripts/amber: fix fakechroot.
+  * scripts/robur: fix fakechroot.
+
+  [ Johannes Schauer Marin Rodrigues ]
+  * create /dev/fd symlink with --no-target-directory
+
+  [ Luca Boccassi ]
+  * Ubuntu: add symlink for plucky
+
+ -- Luca Boccassi <bluca@debian.org>  Wed, 27 Nov 2024 22:08:03 +0000
+
 debootstrap (1:1.0.137-2kaisen) kaisen-packages; urgency=medium
 
   * Drop the patch kaisen-lib64.patch (now managed by the kaisen-lib64 package) 
