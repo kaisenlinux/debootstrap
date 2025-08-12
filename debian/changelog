@@ -1,3 +1,16 @@
+debootstrap (1:1.0.141-1kaisen) kaisen-packages; urgency=medium
+
+  * Import the new upstream release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 10 Aug 2025 03:08:21 +0200
+
+debootstrap (1.0.141) unstable; urgency=medium
+
+  [ Jeremy Bícha ]
+  * Ubuntu: add symlink for questing
+
+ -- Luca Boccassi <bluca@debian.org>  Thu, 24 Apr 2025 18:07:42 +0100
+
 debootstrap (1:1.0.140-1kaisen) kaisen-packages; urgency=medium
 
   * Import the new upstream release
